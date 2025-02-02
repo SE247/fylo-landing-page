@@ -390,6 +390,10 @@ footer ul li a {
     color: var(--neutal-grayish-blue);
 
     text-decoration: none;
+
+    font-family: "Raleway", serif;
+    font-size: 16px;
+    
 }
 
 footer .contact {
