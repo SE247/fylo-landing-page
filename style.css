@@ -69,16 +69,17 @@ header ul li a {
 /* general styling */
 h1 {
 
-    font-family: "Raleway", serif;
+    font-family: "Open Sans", serif;
     font-size: 42px;
     color: var(--primary-dark);
+    font-weight: 700;
 
 }
 
 section p {
-    font-family: "Open Sans", serif;
+    font-family: "Raleway", serif;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--primary-dark);
 }
 
@@ -447,4 +448,133 @@ footer .contact-icons {
 
 footer .contact-icons li a {
     font-size: 19px;
+}
+
+@media only screen and (max-width: 500px) {
+    body {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    header,
+    footer,
+    section {
+       max-width: 100%;
+       padding: 35px;
+       margin: 0 auto; 
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    br {
+        display: none;
+    }
+
+    form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .section-1 h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .section-1 p {
+        font-size: 18px;
+    }
+
+    .section-1 form input:first-child,
+    .section-1 form input:last-child {
+        margin: 0;
+        width: 100%;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .section-3 form input:first-child,
+    .section-3 form input:last-child {
+        margin: 0;
+        width: 80%;
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .section-3 .review-section p {
+        text-align: left;
+    }
+
+    footer,
+    .section-1,
+    .section-2,
+    .section-3 {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    img,
+    .section-2 img:first-child {
+        max-width: 428px;
+    }
+
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    header ul li,
+    header ul li a {
+        padding: 0 10px;
+        font-size: 14px;
+    }
+
+    header img {
+    max-width: 110px;
+    }
+
+
+
+    footer {
+        align-items: baseline;
+        text-align: left;
+        gap: 3.5rem;
+    }
+
+    footer .contact-icons {
+        width: 100%;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    footer .contact-icons li {
+        width: 35px;
+        height: 35px;
+        padding-bottom: 0;
+    }
+
+    footer ul li,
+    footer .contact p {
+        padding-bottom: 1rem;
+    }
+
+    footer .contact p,
+    footer ul li a {
+        font-size: 18px;
+    }
 }
