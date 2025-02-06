@@ -70,13 +70,14 @@ header ul li a {
 h1 {
 
     font-family: "Open Sans", serif;
-    font-size: 42px;
+    font-size: 40px;
     color: var(--primary-dark);
     font-weight: 700;
 
 }
 
 section p {
+    padding-top: 1rem;
     font-family: "Raleway", serif;
     font-size: 18px;
     font-weight: 600;
@@ -448,7 +449,7 @@ footer .contact-icons {
     grid-column: 4 / 5;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px) {
     body {
         min-width: 100%;
         max-width: 100%;
@@ -521,6 +522,23 @@ footer .contact-icons {
         align-items: center;
         text-align: center;
         gap: 1.5rem;
+    }
+
+    .section-2 a::after {
+        display: block;
+        content: '';
+        height: 1px;
+        background-color: var(--accent-cyan);
+        max-width: 45%;
+        margin: 0 auto;
+    }
+
+    .section-2 a{
+        padding: 1.8rem;
+    }
+
+    .review-section {
+        text-align: left;
     }
 
     img,
